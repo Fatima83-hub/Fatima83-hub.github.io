@@ -1,5 +1,4 @@
-<head>
-<h> Fatima83-hub.github.io
+<head> Fatima83-hub.github.io
 <p> Fatima Zahrae Touzi
 <p>fati_avs11@hotmail.com
 <p>First I open Git hub in web browser then I create account. then I download Git hub desktop
