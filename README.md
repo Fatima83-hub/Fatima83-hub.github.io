@@ -21,6 +21,6 @@ Also I like to read fiction book and non fiction books about health, philosophy,
  *  Physics
 
 ## Websites I Recommend
-   -[Google](https://www.google.com) - Google is an important site for me as it makes it easy for me to search and gives me all the information that i need.
-   -[Khan Academy](https://www.khanacademy.org) - Khan Academy is the best for me. It has all the course that may you look for it.
-   -[ Pinterest](https://www.pinterest.com) - Pinterest is a visual discovery engine for finding ideas like recipes, art, home decoration,and style inspiration.
+   * -[Google](https://www.google.com) - Google is an important site for me as it makes it easy for me to search and gives me all the information that i need.
+   * -[Khan Academy](https://www.khanacademy.org) - Khan Academy is the best for me. It has all the course that may you look for it
+   *  -[ Pinterest](https://www.pinterest.com) - Pinterest is a visual discovery engine for finding ideas like recipes, art, home decoration,and style inspiration.
