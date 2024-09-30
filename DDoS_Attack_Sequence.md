@@ -14,6 +14,7 @@ sequenceDiagram
     WebServer-->>BotNet: Unable to respond  
     BotNet-->>Attacker: Attack partially failed  
 
+
 Explanation:
 
 • Implement the Diagram:*Attacker -> BotNet: Issue attack command
