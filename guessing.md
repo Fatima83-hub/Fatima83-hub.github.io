@@ -17,7 +17,7 @@ flowchart TD
     TooHigh --> AskInput
     TooLow --> AskInput
 
-    Start Game: The game starts by generating a random number within a predefined range (e.g., 1 to 100).
+    Start Game: The game starts by generating a random number within a right range ( 1 to 100).
 
 Generate Random Number: The game generates a random number that the player must guess.
 
