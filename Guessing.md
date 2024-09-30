@@ -16,17 +16,24 @@ Flowchart TD
     CorrectGuess --> EndGame[End Game]
     TooHigh --> AskInput
     TooLow --> AskInput
-    Start Game: The game starts by generating a random number within a predefined range (1 to 100).
+
+    Documentation:
+    
+    Start Game: The game starts by generating a random number within a predefined range (1 to 100).  
 Generate Random Number: The game generates a random number that the player must guess.
-Ask User to Guess: The user is prompted to input a guess.
+Ask User to Guess: The user is prompted to input a guess.  
+
 Check if Input is Valid:
     If the input is not a valid number, the user will see an error message and will be asked to guess again.
     If the input is valid, it proceeds to check if it is within the correct range.
+    
 Check if Input is within Range:
-    If the input is out of the range, the user will see an error message and will asked to guess again.
+    If the input is out of the range, the user will see an error message and will asked to guess again.  
     If the input is within range, the game evaluates the guess.
+    
 Evaluate the Guess:
-    If the guess is too high, the game gives feedback "Too High" and will aske the user to guess again.
-    If the guess is too low, the game gives feedback "Too Low" and asks the user to guess again.
+    If the guess is too high, the game gives feedback "Too High" and will aske the user to guess again.  
+    If the guess is too low, the game gives feedback "Too Low" and asks the user to guess again.  
     If the guess is correct, the game congratulates the user with the message "Correct! You Win".
+    
 End Game: Once the correct guess is made, the game ends.
