@@ -1,20 +1,21 @@
-Flowchart TD
+Flowchart TD  
+
     Start([Start Game]) -->(Generate Random Number) GenerateNum[Generate Random Number within Range]
     GenerateNum --> AskInput[Ask User for Guess]
     
-    AskInput -->(Check if Input is Numeric) CheckInput{Is input valid?}
-    CheckInput -->(No) InvalidInput[Display Error: Not a number] --> AskInput
+    AskInput -->(Check if Input is Numeric) CheckInput{Is input valid?}  
+    CheckInput -->(No) InvalidInput[Display Error: Not a number] --> AskInput  
     CheckInput -->(Yes) CheckRange{Is input within range?}
     
-    CheckRange -->(No) OutOfRange[Display Error: Out of Range] --> AskInput
+    CheckRange -->(No) OutOfRange[Display Error: Out of Range] --> AskInput  
     CheckRange -->(Yes) EvaluateGuess[Check if Guess is Correct]
     
-    EvaluateGuess -->(Too High) TooHigh[Display "Too High"] --> AskInput
-    EvaluateGuess -->(Too Low) TooLow[Display "Too Low"] --> AskInput
+    EvaluateGuess -->(Too High) TooHigh[Display "Too High"] --> AskInput  
+    EvaluateGuess -->(Too Low) TooLow[Display "Too Low"] --> AskInput  
     EvaluateGuess -->(Correct) CorrectGuess[Display "Correct! You Win"]
     
-    CorrectGuess --> EndGame[End Game]
-    TooHigh --> AskInput
+    CorrectGuess --> EndGame[End Game]  
+    TooHigh --> AskInput  
     TooLow --> AskInput
 
     Documentation:
