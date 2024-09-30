@@ -1,18 +1,22 @@
-flowchart TD
-    Start([Start Game]) -->|Generate Random Number| GenerateNum[Generate Random Number within Range]
-    GenerateNum --> AskInput[Prompt User for Guess]
-    AskInput -->|Check if Input is Numeric| CheckInput{Is input valid?}
-    CheckInput -->|No| InvalidInput[Display Error: Not a number] --> AskInput
-    CheckInput -->|Yes| CheckRange{Is input within range?}
-    CheckRange -->|No| OutOfRange[Display Error: Out of Range] --> AskInput
-    CheckRange -->|Yes| EvaluateGuess[Check if Guess is Correct]
-    EvaluateGuess -->|Too High| TooHigh[Display "Too High"] --> AskInput
-    EvaluateGuess -->|Too Low| TooLow[Display "Too Low"] --> AskInput
-    EvaluateGuess -->|Correct| CorrectGuess[Display "Correct! You Win"]
+Flowchart TD
+    Start([Start Game]) -->(Generate Random Number) GenerateNum[Generate Random Number within Range]
+    GenerateNum --> AskInput[Ask User for Guess]
+    
+    AskInput -->(Check if Input is Numeric) CheckInput{Is input valid?}
+    CheckInput -->(No) InvalidInput[Display Error: Not a number] --> AskInput
+    CheckInput -->(Yes) CheckRange{Is input within range?}
+    
+    CheckRange -->(No) OutOfRange[Display Error: Out of Range] --> AskInput
+    CheckRange -->(Yes) EvaluateGuess[Check if Guess is Correct]
+    
+    EvaluateGuess -->(Too High) TooHigh[Display "Too High"] --> AskInput
+    EvaluateGuess -->(Too Low) TooLow[Display "Too Low"] --> AskInput
+    EvaluateGuess -->(Correct) CorrectGuess[Display "Correct! You Win"]
+    
     CorrectGuess --> EndGame[End Game]
     TooHigh --> AskInput
     TooLow --> AskInput
-    Start Game: The game starts by generating a random number within a right range ( 1 to 100).
+    Start Game: The game starts by generating a random number within a predefined range (1 to 100).
 Generate Random Number: The game generates a random number that the player must guess.
 Ask User to Guess: The user is prompted to input a guess.
 Check if Input is Valid:
