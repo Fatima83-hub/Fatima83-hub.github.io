@@ -14,7 +14,9 @@ sequenceDiagram
     WebServer-->>BotNet: Unable to respond  
     BotNet-->>Attacker: Attack partially failed  
 
-*Implement the Diagram:*Attacker -> BotNet: Issue attack command  
+Implement the Diagram:
+
+*Attacker -> BotNet: Issue attack command  
   The attacker sends a command to the BotNet to initiate a DDoS attack. 
 
 *BotNet -> WebServer: Flood with requests  
